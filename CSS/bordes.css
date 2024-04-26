@@ -1,0 +1,43 @@
+.grid-container{
+    display: grid;
+    grid-template-columns: 25% 25% 25% auto; /*Primera y segunda columna al 33% del ancho del contenedor, la tercera se ajustará dependiendo del ancho de su contenido*/
+    gap: 30px; /*Espacio entre filas y columnas (vertical y horizontal) dentro del contenedor*/
+    background-color: grey;
+    padding: 15px;
+    justify-content: center;
+}
+
+.grid-container > div{ /*Estilos para los hijos <div> de grid-container*/
+    background-color: wheat;
+    text-align: center;
+}
+
+.cajita{
+    width: 100px;
+    height: 100px;
+}
+
+.solid{
+border: 5px solid black;
+}
+.dotted{
+border: 5px dotted black;
+}
+.dashed{
+border: 5px dashed black;
+}
+.double{
+border: 5px double black;
+}
+.groove{
+border: 5px groove black;
+}
+.ridge{
+border: 5px ridge black;
+}
+.inset{
+border: 5px inset black;
+}
+.outset{
+border: 5px outset black;
+}

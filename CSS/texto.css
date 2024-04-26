@@ -1,0 +1,77 @@
+.grid-container{
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    background-color: grey;
+    padding: 15px;
+    justify-content: space-evenly;
+}
+
+.grid-container > div, .fonts > div{ /*Indico los mismos estilos para los div hijos de grid-container fonts*/
+    margin: 15px;
+    padding: 15px;
+    background-color: white;
+}
+
+/*En el doc html está la clase completa como class="grid-container fonts" para que conserve los estilos 
+antes establecidos para grid-container, solo utilizo la palabra .fonts como clase para añadir una columna más*/
+.fonts{ 
+    grid-template-columns: auto auto auto auto auto;
+}
+
+h4{
+    text-align: center;
+}
+
+.left{
+    text-align: left;
+}
+
+.right{
+    text-align: right;
+}
+
+.center{
+    text-align: center;
+}
+.justify{
+    text-align: justify;
+}
+
+.overline{
+    text-decoration: overline;
+}
+.line-trough{
+    text-decoration: line-through;
+}
+.underline{
+    text-decoration: underline;
+}
+.overline-underline{
+    text-decoration: overline underline;
+}
+
+.uppercase{
+    text-transform: uppercase;
+}
+.lowercase{
+    text-transform: lowercase;
+}
+.capitalize{
+    text-transform: capitalize;
+}
+
+.serif{
+    font-family: serif;
+}
+.sans-serif{
+    font-family: sans-serif;
+}
+.monospace{
+    font-family: monospace;
+}
+.cursive{
+    font-family: cursive;
+}
+.fantasy{
+    font-family: fantasy;
+}

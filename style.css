@@ -1,0 +1,83 @@
+/*Estilos generales para todas las vistas*/
+
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    margin-bottom: 100px;
+}
+
+.navbar{
+    width: 100%;
+    background: #878787;
+    overflow: auto; /*Da una altura coherente según el tamaño de su contenido*/
+    margin: 0;
+    position: sticky; /*Pega el navbar para que se desplace al hacer scroll manteniendo su posición*/
+    top: 0; /*Fija el navbar en la parte superior del body*/
+}
+
+.navbar a{
+    float: left;
+    padding: 12px;
+    color: white;
+    text-decoration: none;
+}
+
+.navbar a:hover{
+    background-color: #00bd87;
+}
+
+.navbar a > i{
+    padding-right: 7px;
+}
+
+.active{
+    background-color: #00bd87;
+}
+
+.responsive{
+    display: none;
+}
+
+.introduccion{
+    margin: 0 15%;
+    text-align: center;
+}
+
+@media (max-width:600px){ /*Estilos cuando el ancho de la pantalla sea menor a 600px*/
+    .responsive{
+        display: block;
+        float: right;
+        padding: 12px;
+    }
+    .navbar a{
+        display: none;
+    }
+}
+
+footer{
+    background-color: #878787;
+    bottom: 0;
+    position: fixed; /*Ignora a su contenedor padre y se posiciona de forma fija con la ventana del navegador según configures al elemento*/
+    width: 100%;
+    color: white;
+    text-align: center;
+    padding: 12px 0;
+    height: 10%;
+}
+
+footer p{
+    margin: 0;
+    font-weight: bold;
+    margin-bottom: 12px;
+}
+
+footer a{
+    margin-right: 12px;
+    margin-bottom: 12px;
+    font-size: 1.4em;
+}
+
+footer a:hover{
+    filter: brightness(170%);
+    font-size: 1.5em;
+}

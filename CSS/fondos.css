@@ -1,0 +1,31 @@
+.grid-container{
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    background-color: grey;
+    padding: 15px;
+    justify-content: space-evenly;
+}
+
+.grid-container > div{
+    width: 25vw;
+    height: 50vh;
+    margin: 15px;
+    padding: 15px;
+    border: 2px solid black;
+}
+
+h3, h4{
+    text-align: center;
+}
+
+.plano{
+    background-color: turquoise;
+}
+
+.gradiente{
+    background: linear-gradient(to right, rgb(81, 81, 81), rgb(0, 255, 0));
+}
+
+.conImagen{
+    background-image: url(https://img.freepik.com/fotos-premium/impresionante-paisaje-natural-hermosa-escena-altos-picos-montanas-tatra-piedras-lago-montana_987686-8076.jpg?size=626&ext=jpg&ga=GA1.1.672697106.1713571200&semt=ais);
+}
